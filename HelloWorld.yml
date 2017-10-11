@@ -1,0 +1,9 @@
+hosts:
+  10.0.2.4
+  10.0.2.5
+    
+tasks:
+
+- name: Cria um arquivo chamado '/tmp/ArquivoTeste.txt' com o texto 'Ola Mundo'
+
+  copy: content="Hello World\n" dest=/tmp/ArquivoTeste.txt
